@@ -1,0 +1,47 @@
+bgm:none;
+changeBg:none -next
+changeFigure:none -next;
+bgm:threadcutter.ogg;
+changeBg:Act_1_City.jpg
+:In 2050 ,People live in Metaverse;
+:Black is the game company's CEO;
+and he is having a speech in the Metaverse;
+changeBg:none -next
+changeBg:Act_1_outdoor.jpeg -next
+bgm:ReveilleDNT.ogg;
+changeFigure:Black.png -next;
+Black:The Metaverse is people's greatest invention.  -glee11.ogg;
+And Our Game will take it to a new level. (game=Minesweeper) -glee10.ogg;
+Our Game -glee9.ogg;
+It's not just a game -glee8.ogg;
+It's a Game of absolute randomness and fairness. -glee7.ogg;
+In this game -glee6.ogg;
+There are no men, women, children, rich or poor -glee5.ogg;
+Get the final award. -glee4.ogg;
+and you'll be dance all your rest life -glee3.ogg;
+changeFigure:none -next;
+changeBg:none -next
+:;
+bgm:none;
+intro:Take a look behind the scenes of Minesweeper;
+changeBg:Act_2_The office_1.jpg
+bgm:Overture98Excerpt1.ogg;
+changeFigure:Black.png -next;
+Black:That's too fast to eliminated this round -glee2.ogg;
+Forty people are just over an hour to end. -glee5.ogg;
+There used to be some good ones.  -mumble1.ogg;
+What kind of noob are they now. -mumble2.ogg;
+changeFigure:none -next;
+bgm:none;
+intro:Inside the Minesweeper ;
+bgm:DikkiPainguinLoop(rev-1).ogg;
+changeBg:Act_2_Main.png -next
+changeFigure:Red.png -next;
+Red:I can't take it anymore. -hero_voice_blockbot_striker1.wav;
+I'm going to go for broke -hero_voice_blockbot_striker2.wav;
+changeFigure:Blue.png -next;
+Blue:Hey! Don't! -hero_voice_blockbot_tank1.wav;
+You will lose it! -hero_voice_blockbot_tank2.wav;
+changeFigure:none;
+:;
+choose:random block 1:1.txt|random block 2:end.txt;

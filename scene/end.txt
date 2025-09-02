@@ -1,0 +1,8 @@
+changeFigure:Bomb.png -next;
+:;
+changeBg:none -next
+bgm:none;
+bgm:alwaysdestroythethingsilove(excerpt).ogg;
+intro:THE END;
+changeFigure:none -next;
+choose:Play again :start.txt;
