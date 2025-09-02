@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Yiyang's creative project hub"/>
+  <link rel="icon" type="image/x-icon" href="Antirender.ico"/>
+  <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Yiyang Main Profile Page | Project Portal</title>
+
+  <style>
+        @font-face {
+      font-family: 'Ubuntu';
+      font-style: normal;
+      font-weight: 400;
+      src: url(https://fonts.gstatic.com/s/ubuntu/v20/4iCs6KVjbNBYlgoKfw72nU6AFw.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+    :root {
+      --primary: #ff4646;
+      --secondary: #28e4d7;
+      --accent: #ffe046;
+      --glow: radial-gradient(circle at var(--x) var(--y), 
+                rgba(255,107,107,0.2) 0%, 
+                rgba(78,205,196,0.1) 50%, 
+                transparent 100%);
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Ubuntu',Impact, Haettenschweiler, 'Arial Narrow Bold';
+    }
+    body {
+      font-family: 'Ubuntu',Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif,'Comic Neue', cursive,;
+      min-height: 100vh;
+      background: linear-gradient(45deg, 
+        #f70419, 
+        #ff7a0d, 
+        #09f2e2, 
+        #e2f911
+      );
+      background-size: 340% 380%;
+      animation: gradientFlow 9s ease infinite;
+    }
+    .p{font-family: 'Ubuntu',Impact, Haettenschweiler, 'Arial Narrow Bold';}
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 5vh 20px;
+      position: relative;
+    }
+    .container::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: var(--glow);
+      pointer-events: none;
+      transition: background 0.3s;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 3rem;
+      position: relative;
+      z-index: 2;
+    }
+    .title {
+      font-size: 3.5rem;
+      color: white;
+      text-shadow: 3px 3px 0 rgba(0,0,0,0.1);
+      margin-bottom: 1rem;
+      transform: rotate(-3deg);
+      display: inline-block;
+      background: linear-gradient(45deg, #ffe66d, #ff6b6b);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .subtitle {
+      color: white;
+      font-size: 1.5rem;
+      text-shadow: 2px 2px 0 rgba(0,0,0,0.1);
+      transform: rotate(2deg);
+      display: inline-block;
+      background: rgba(255,255,255,0.1);
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+    }
+    /* --- Grid Classes --- */
+    .main-projects {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); 
+      gap: 1.8rem;
+      text-align: center;
+      list-style: none;
+      margin-bottom: 2rem;
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      text-align: center;
+      gap: 1.8rem;
+      list-style: none;
+    }
+
+    .main-projects, .card-grid {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-auto-flow: dense;
+    }
+
+
+    .selector {
+      position: relative;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 20px;
+      border: 3px solid white;
+      transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+    .selector:hover {
+      transform: translateY(-5px) rotate(1deg);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    }
+    .selector select {
+      width: 100%;
+      padding: 1.5rem;
+      font-size: 1.2rem;
+      font-weight: 700;
+      background: transparent;
+      border: none;
+      appearance: none;
+      color: #2d3436;
+      cursor: pointer;
+    }
+    .selector::after {
+      content: "▼";
+      position: absolute;
+      right: 1.5rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--primary);
+      pointer-events: none;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 20px;
+      padding: 2rem;
+      transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+      position: relative;
+      border: 3px solid white;
+    }
+    .card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(45deg, 
+        transparent 0%, 
+        rgba(255,255,255,0.3) 50%, 
+        transparent 100%);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    .card:hover {
+      transform: 
+        translateY(-10px) 
+        rotate(3deg) 
+        scale(1.05);
+      box-shadow: 
+        0 15px 30px rgba(0,0,0,0.2),
+        0 0 50px rgba(255,230,109,0.3);
+    }
+    .card:hover::before {
+      opacity: 1;
+    }
+    
+    .cv-card{
+      line-height: 1.5rem;
+    background: rgba(255, 255, 255, 0.9);
+      border-radius: 20px;
+      padding: 2rem;
+      transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+      position: relative;
+      text-align: left;
+      border: 3px solid white;
+    }
+
+    .card a {
+      
+      color: #2d3436;
+      text-decoration: none;
+      font-weight: 700;
+      display: block;
+      position: relative;
+      z-index: 1;
+      transition: color 0.3s;
+    }
+    .card:hover a {
+      color: var(--primary);
+    }
+
+    @keyframes gradientFlow {
+      0% { background-position: 0% 50% }
+      50% { background-position: 100% 50% }
+      100% { background-position: 0% 50% }
+    }
+    @media (max-width: 768px) {
+      .title {
+        font-size: 2.5rem;
+      }
+      .subtitle {
+        font-size: 1.2rem;
+      }
+      .selector select {
+        font-size: 1rem;
+        padding: 1.2rem;
+      }
+      .card {
+        padding: 1.5rem;
+      }
+      /* 
+         .main-projects { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+         .card-grid { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); } */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 class="title">Yiyang Main Profile Page</h1>
+      <p class="subtitle">I will try my best to make good work. ✨</p>
+    </header>
+
+    <ul class="main-projects">
+      <li class="selector">
+        <select onchange="window.location.href=this.value">
+          <option value="" selected disabled>DESN18654 V1-V14</option>
+          <option value="DESN18654V1/index.html">DESN18654 V1</option>
+          <option value="DESN18654V2/index.html">DESN18654 V2</option>
+          <option value="DESN18654V3/index.html">DESN18654 V3</option>
+          <option value="DESN18654V4/index.html">DESN18654 V4</option>
+          <option value="DESN18654V5/index.html">DESN18654 V5</option>
+          <option value="DESN18654V6/index.html">DESN18654 V6</option>
+          <option value="DESN18654V7/index.html">DESN18654 V7</option>
+          <option value="DESN18654V8/index.html">DESN18654 V8</option>
+          <option value="DESN18654V9/index.html">DESN18654 V9</option>
+          <option value="DESN18654V10/index.html">DESN18654 V10</option>
+          <option value="DESN18654V11/index.html">DESN18654 V11</option>
+          <option value="DESN18654V12/index.html">DESN18654 V12</option>
+          <option value="DESN18654V13/index.html">DESN18654 V13</option>
+          <option value="DESN18654V14/index.html">DESN18654 V14</option>
+          <option value="DESN18654V15/index.html">DESN18654 V15</option>
+          <option value="DESN18654V16/index.html">DESN18654 V16</option>
+          <option value="DESN18654V17/index.html">DESN18654 V17</option>
+          <option value="DESN18654V18/App-Store.html">DESN18654 V18</option>
+        </select>
+      </li>
+      <li class="selector">
+        <select onchange="window.location.href=this.value">
+          <option value="" selected disabled>DESN19428 GSGC V1-V6</option>
+          <option value="v1/index.html">DESN19428 V1</option>
+          <option value="v2/index.html">DESN19428 V2</option>
+          <option value="v3/index.html">DESN19428 V3</option>
+          <option value="v4/index.html">DESN19428 V4</option>
+          <option value="v5/index.html">DESN19428 V5</option>
+          <option value="v6/index.html">DESN19428 V6</option>
+        </select>
+      </li>
+      <li class="selector">
+        <select onchange="window.location.href=this.value">
+          <option value="" selected disabled>DESN22848 Projects</option>
+          <option value="DESN22848/index.html">DESN22848</option>
+          <option value="DESN22848P2/index.html">DESN22848 P2</option>
+          <option value="DESN22848P3/index.html">DESN22848 P3</option>
+          <option value="DESN22848V1/index.html">DESN22848 V1</option>
+          <option value="DESN22848V2/index.html">DESN22848 V2</option>
+          <option value="DESN22848V3/index.html">DESN22848 V3</option>
+          <option value="DESN22848V4/index.html">DESN22848 V4</option>
+
+        </select>
+      </li>
+      <li class="selector">
+        <select onchange="window.location.href=this.value">
+          <option value="" selected disabled>VDES15738 Projects</option>
+          <option value="VDES15738P1/index.html">VDES15738 P1</option>
+          <option value="VDES15738P2/index.html">VDES15738 P2</option>
+          <option value="VDES15738P3/index.html">VDES15738 P3</option>
+          <option value="VDES15738P3V1/index.html">VDES15738 P3V1</option>
+          <option value="VDES15738P3V2/index.html">VDES15738 P3V2</option>
+          <option value="VDES15738P3V3/index.html">VDES15738 P3V3</option>
+          <option value="VDES15738P3V4/index.html">VDES15738 P3V4</option>
+          <option value="VDES15738P3V5/index.html">VDES15738 P3V5</option>
+        </select>
+      </li>
+      <li class="selector">
+        <select onchange="window.location.href=this.value">
+          <option value="" selected disabled>Game Projects</option>
+          <option value="g1/index.html">Game 1</option>
+          <option value="g2/index.html">Game 2</option>
+          <option value="g3/index.html">Game 3</option>
+          <option value="g4v1/index.html">Game 4V1</option>
+          <option value="power-calculator/index.html">power-calculator</option>
+        </select>
+      </li>
+      <li class="selector">
+        <select onchange="window.location.href=this.value">
+          <option value="" selected disabled>DESN10799 Projects</option>
+          <option value="DESN10799/index.html">DESN10799</option>
+          <option value="DESN10799P3/index.html">DESN10799P3V1</option>
+          <option value="DESN10799P3/index2.html">DESN10799P3V2</option>
+          <option value="DESN10799P3/index3.html">DESN10799P3V3</option>
+          <option value="DESN10799P3/index4.html">DESN10799P3V4</option>
+          <option value="DESN10799P3/index5.html">DESN10799P3V5</option>
+          <option value="DESN10799P3/index6.html">DESN10799P3V6</option>
+          <option value="DESN10799P3/index7.html">DESN10799P3V7</option>
+        </select>
+       </li>
+  </ul>
+
+    <ul class="card-grid">
+      <li class="card">
+        <a href="l1/index.html">VDES19798Logo</a>
+      </li>
+      <li class="card">
+        <a href="pinzuo/index.html">Pinzuo</a>
+      </li>
+      <li class="card">
+        <a href="pinzuoV2/index.html">PinzuoV2</a>
+      </li>
+      <li class="card">
+        <a href="Rocket-Calculator/index.html">Rocket Calculator</a>
+      </li>
+      <li class="card">
+        <a href="Milk/index.html">Milk Calculator</a>
+      </li>
+      <li class="card">
+        <a href="nevergonna/index.html">Never Gonna Give You Up</a>
+      </li>
+
+      <li class="cv-card" style="grid-column: 1 / -1; padding: 2rem;">
+        <h3>About Yiyang</h3>
+        <p><strong>Main Research Directions:</strong><br>
+          Landscape design, environmental design, experimental space design
+        </p>
+        <p><strong>Major Courses:</strong><br>
+          Introduction to Landscape Design, History of Landscape Architecture and Design, 
+          Landscape System Design, Thesis, Experimental Space Design
+        </p>
+        <p><strong>Professional Appointments:</strong><br>
+          Judge for "National University Landscape Design Graduation Exhibition" (Peking University)<br>
+          Judge for "Asian Design Academic Year Award" (Asian Urban Design Alliance)<br>
+          Member of China Architectural Association
+        </p>
+        <p><strong>Major Honors:</strong><br>
+          Jiangsu Province "333 Project" Training Target<br>
+          Jiangsu Province Young Backbone Teacher<br>
+          Landscape Peach & Plum Award - National University Landscape Design Graduation Exhibition Outstanding Instructor<br>
+          China Human Settlement Design Academic Year Award Best Instructor
+        </p>
+        <p><strong>Research Output:</strong><br>
+          13 published papers including "Architectural Landscape Consciousness and Landscape Architectural Awareness"<br>
+          2 monographs: "Landscape Form Thinking and Design Methodology", "Urban Landscape Design"<br>
+          5 edited/co-authored books including "Landscape Design Methods and Expression"
+        </p>
+        <p><strong>Notable Projects:</strong><br>
+          Nanjing Youth Olympic Games Landscape Design<br>
+          Zhengzhou International Airport Terminal Plaza<br>
+          Shijiazhuang Hutuo River Waterfront Design<br>
+          Xuancheng New City Lacoste Lake Landscape Design<br>
+          Nanjing Jiaotong University New Campus Planning
+        </p>
+      </li>
+    </ul>
+  </div>
+
+  <script>
+    document.addEventListener('mousemove', (e) => {
+      const x = e.clientX;
+      const y = e.clientY;
+      document.documentElement.style.setProperty('--x', `${x}px`);
+      document.documentElement.style.setProperty('--y', `${y}px`);
+    });
+  </script>
+</body>
+</html>
