@@ -6,7 +6,8 @@
 
 [Portfolio](https://antirender.github.io) · [Email](mailto:antirender3@gmail.com)
 
-<img src="https://github-profile-trophy.vercel.app/?username=Antirender&row=1&column=8&no-frame=true&no-bg=true" alt="Antirender"/>
+<img src="img/kigimg1.jpeg" alt="Antirender" />
+
 
 </div>
 
