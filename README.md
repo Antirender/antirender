@@ -1,16 +1,96 @@
-## Hi there 👋
+<div align="center">
 
-<!--
-**Antirender/antirender** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+# Hi, I'm Antirender
 
-Here are some ideas to get you started:
+**Design + Dev** · interactive web prototypes · visual storytelling + data systems
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+[Portfolio](https://antirender.github.io) · [Email](mailto:antirender3@gmail.com)
+
+<img src="https://github-profile-trophy.vercel.app/?username=Antirender&row=1&column=8&no-frame=true&no-bg=true" alt="Antirender"/>
+
+</div>
+
+---
+
+![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/-JavaScript-F4D500?style=flat-square&logo=javascript&logoColor=white)
+![p5.js](https://img.shields.io/badge/-p5.js-ED225D?style=flat-square&logo=p5.js&logoColor=white)
+![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=Python&logoColor=white)
+![Figma](https://img.shields.io/badge/-Figma-F24E1E?style=flat-square&logo=figma&logoColor=white)
+![Tableau](https://img.shields.io/badge/-Tableau-E97627?style=flat-square&logo=tableau&logoColor=white)
+![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white)
+
+---
+
+## ▸ whoami
+
+```txt
+🆔 ID: Antirender
+
+I'm a design-focused developer who builds interactive web prototypes 
+and visual storytelling systems (Figma → HTML/CSS/JS), including 
+p5.js sound/visual interactions, Tableau data visualization, and 
+automation/scripting in Python/PowerShell.
+```
+
+## 🖥 ASCIICAST
+<!-- Optional: record a short terminal intro and embed it here
+     Steps: 1) Record at https://asciinema.org/
+            2) Replace XXXX with your cast id
+     Example: [![asciicast](https://asciinema.org/a/XXXX.svg)](https://asciinema.org/a/XXXX) -->
+_Coming soon..._
+
+## 💼 WORKING ON
+- [**Antirender.github.io**](https://antirender.github.io) — portfolio / case studies (02/26–now)
+- [**moodpeek1**](https://moodpeek1.vercel.app/) — interactive prototype / WIP (02/26–now)
+- **mine** — experiments / notes / WIP (02/26–now)
+
+## 💪 SKILL DESCRIPTIONS
+
+- **Build responsive pages and interactive UI** with HTML/CSS/JS
+- **Prototype fast** from Figma → working code (clean layouts, reusable components)
+- **Create sound-reactive / input-driven visuals** with p5.js + p5.sound
+- **Design and document UX flows** + dark pattern case-study prototypes
+- **Produce data dashboards + visual analysis** in Tableau
+- **Automate workflow tasks** with Python / PowerShell
+- **Comfortable with fundamentals** in C++ / Python for problem-solving
+
+## 🔧 TOOLBOX
+
+**Design:**  
+![Figma](https://img.shields.io/badge/-Figma-F24E1E?style=flat-square&logo=figma&logoColor=white) UI systems, documentation
+
+**Dev:**  
+![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/-JavaScript-F4D500?style=flat-square&logo=javascript&logoColor=white)
+![p5.js](https://img.shields.io/badge/-p5.js-ED225D?style=flat-square&logo=p5.js&logoColor=white)
+![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white)
+
+**Data + Automation:**  
+![Tableau](https://img.shields.io/badge/-Tableau-E97627?style=flat-square&logo=tableau&logoColor=white)
+![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=Python&logoColor=white)
+![PowerShell](https://img.shields.io/badge/-PowerShell-5391FE?style=flat-square&logo=powershell&logoColor=white)
+
+## 🍎 FAVORITE
+- **Interactive prototyping** — rapid iteration from design to code
+- **Clean information design** — clarity over decoration
+- **Systems thinking** — understanding relationships and flow
+
+## 🧾 USED
+![VS Code](https://img.shields.io/badge/-VS_Code-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white)
+![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white)
+![Figma](https://img.shields.io/badge/-Figma-F24E1E?style=flat-square&logo=figma&logoColor=white)
+![Tableau](https://img.shields.io/badge/-Tableau-E97627?style=flat-square&logo=tableau&logoColor=white)
+![C++](https://img.shields.io/badge/-C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white)
+
+## 📈 STATS
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Antirender&show_icons=true&bg_color=ffffff)
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Antirender&layout=compact)
+
+
