@@ -88,10 +88,9 @@ automation/scripting in Python/PowerShell.
 ![Tableau](https://img.shields.io/badge/-Tableau-E97627?style=flat-square&logo=tableau&logoColor=white)
 ![C++](https://img.shields.io/badge/-C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white)
 
-## 📈 STATS
+## 🌠MORE PICTURE
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Antirender&show_icons=true&bg_color=ffffff)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Antirender&layout=compact)
+<img src="img/001.jpeg" alt="Antirender" />
+<img src="img/002.jpeg" alt="Antirender" />
 
 
