@@ -34,17 +34,17 @@ p5.js sound/visual interactions, Tableau data visualization, and
 automation/scripting in Python/PowerShell.
 ```
 
-## 🖥 ASCIICAST
-<!-- Optional: record a short terminal intro and embed it here
-     Steps: 1) Record at https://asciinema.org/
-            2) Replace XXXX with your cast id
-     Example: [![asciicast](https://asciinema.org/a/XXXX.svg)](https://asciinema.org/a/XXXX) -->
-_Coming soon..._
+
 
 ## 💼 WORKING ON
-- [**Antirender.github.io**](https://antirender.github.io) — portfolio / case studies (02/26–now)
-- [**moodpeek1**](https://moodpeek1.vercel.app/) — interactive prototype / WIP (02/26–now)
-- **mine** — experiments / notes / WIP (02/26–now)
+* [**Antirender.github.io**](https://antirender.github.io) — portfolio / case studies (02/24–now)
+* [**moodpeek1**](https://moodpeek1.vercel.app/) — interactive prototype / WIP (09/25–now)
+* [**Learn Code**](https://antirender.github.io/DESN18654V18/index.html) — course builds / practice site (09/24–04/25)
+* [**Snapchat (Project)**](https://antirender.github.io/DESN10799P3/index7.html) — interactive web project (02/24–11/24)
+* [**Music**](https://open.spotify.com/artist/6IjMPyKB4LeW2H3cSgZLmW?si=xnEaNqWSS4iQL7J80MFERA) — releases / artist page (04/19–now)
+* [**Lak Crest**](https://antirender.github.io/Lak-crest/index.html) — web build / site experiment (04/22–12/22)
+* [**Physical Computing (P1)**](https://antirender.github.io/DESN30146P1/index.html) — physical computing project (02/25–01/26)
+
 
 ## 💪 SKILL DESCRIPTIONS
 
