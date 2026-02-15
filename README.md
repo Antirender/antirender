@@ -6,7 +6,8 @@
 
 [Portfolio](https://antirender.github.io) · [Email](mailto:antirender3@gmail.com)
 
-<img src="img/kigimg1.jpeg" alt="Antirender" />
+<img src="img/kigimg1.jpeg" alt="Antirender" style="max-width: 700px; width: 100%; height: auto;" />
+
 
 
 </div>
